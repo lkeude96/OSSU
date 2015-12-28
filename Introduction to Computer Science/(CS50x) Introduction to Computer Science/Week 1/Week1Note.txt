@@ -1,0 +1,22 @@
+printf
+--------
+%c ==> Characters
+%d ==> Decimal int
+%i ==> Decimal int
+%f ==> Decimal float
+%s ==> String 
+
+data types
+-----------
+int        ==> 4 bytes
+float      ==> 4 bytes
+double     ==> 8 bytes
+long long  ==> 8 bytes
+char       ==> 1 bytes
+short      ==> 2 bytes
+string     ==> 4 bytes
+bool       ==> 1 bytes
+
+
+
+
