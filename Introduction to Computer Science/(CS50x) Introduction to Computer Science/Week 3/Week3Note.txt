@@ -1,0 +1,32 @@
+Asymptotic notation
+-------------------
+Big O ==> O() ==> Worst Case
+Omega ==> Ω() ==> Best Case
+Theta ==> Θ() ==> Same
+
+Bubble Sort
+-----------
+for each element in list
+  look at element and element directly to the right 
+  if out of order
+    swap elements
+
+Insertion Sort
+--------------
+for i = 1 to n-1
+  element = array[i]
+  j = i;
+  while (j > 0 and array[j-1] > element)
+    array[j] = array[j-1]
+    j = j - 1
+  array[j] = element
+
+Selection Sort
+--------------
+for i = 1 to n-1
+  min = i
+  for j = i + 1 to n
+    if array[j] < array[min]
+      min = array[j]
+  if min != i
+    swap array[min] and array[i]
