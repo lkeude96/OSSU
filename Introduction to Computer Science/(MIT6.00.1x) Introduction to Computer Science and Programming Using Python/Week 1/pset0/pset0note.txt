@@ -1,0 +1,8 @@
+This wont be graded
+
+We will be using Python 2.7 and runing Enthought Canopy on a OSX
+
+You can download it here https://www.enthought.com/downloads/
+
+Once downloaded open and copy to application folder
+

@@ -1,0 +1,64 @@
+Types Of Programming Languages
+==============================
+Low level language
+  Source code -> Checker -> Interpreter -> Output
+High level language
+  Compiled language: Source code -> Checker -> Compiler -> Object Code -> Interpreter -> Output
+  Interpreted language: Source code -> Checker -> Interpreter -> Output
+
+Python programs
+================
+Program (or script) is a sequence of definitions and commands
+Command instructs the interpreter to do something
+Program manipulates data objects
+Object
+  Scalar
+  Non-Scalar
+Scalar objects
+  int: integer
+  float: decimal
+  bool: True or False
+Find type of an object use the type() function
+Operator
+  i +  j -> sum
+  i -  j -> difference
+  i *  j -> product
+  i /  j -> division
+  i %  j -> modulo / remainder
+  i ** j -> exponent
+PEMDAS
+Comparison operators
+  i >  j -> greater than
+  i >= j -> greater than or equal to
+  i <  j -> less than
+  i <= j -> less than or equal to 
+  i == j -> equal to 
+  i != j -> not equal to 
+Operators on bools
+  a and b -> true if both true
+  a or  b -> true if either true
+  not a   -> true if a false
+To Type Cast use function example float to int: int(4.3)
+
+Strings
+========
+Non-Scalar are compound objects
+Operatorts of strings
+  3 * 'a' -> 'aaa'
+  'a' + 'a' -> 'aa'
+  'a' + str(3) -> 'a3'
+  len('abc') -> 3
+Extracting parts of string
+  Indexing: 'abc'[0] -> 'a'
+            'abc'[-1] -> 'c' (counts backwards;
+  Slicing: 'abc'[1:3] -> 'bc' (starts at 1 and stop before 3)
+
+Simple Scripts
+===============
+print() -> print to shell
+raw_input -> prompt user and get value
+# -> comments
+
+Branching Programs
+===================
+The simplest branching statement is a conditional

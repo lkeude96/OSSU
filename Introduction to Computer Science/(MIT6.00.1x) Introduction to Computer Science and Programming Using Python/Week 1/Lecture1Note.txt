@@ -1,0 +1,41 @@
+Basic of Computation
+=====================
+What does a computer do?
+  -Performs calculations
+  -Remember the results
+
+Types of Knownledge
+=====================
+What is computation?
+  What is knowledge?
+    -Declarative knowledge: Statements of facts
+    -Imperative knowledge: "how-to" methods and recipes
+
+Basic Machine Architecture
+===========================
+Fixed Program Computer
+  Can only do one set of instructions
+Stored Program Computer
+  Sequence of instructions(programs) stored inside a computer.
+    Built from primitive instructions
+  Special program (interpreter) executes each instructions in order
+Basic Elements
+  -Memory
+  -Control Unit
+  -Arithmetic logic unit
+    -input
+    -output
+What are the basic primitives?
+  Six primitive can compute anything
+    turing complete
+
+Programming Language Characteristics
+=====================================
+Aspects of languages
+  Primitive contructs
+  Syntax (Well-formed)
+  Semantics (Meaning)
+Where can things go wrong?
+  Syntastic errors
+  Static Semantics errors
+
