@@ -1,0 +1,13 @@
+Iteration
+==========
+Start with test
+if true 
+  execute body loop
+reevaluate test
+repeat until evaluated to false
+
+
+Guess and Check Algorithms
+
+Newton-Raphson
+
