@@ -1,0 +1,16 @@
+Creating Functions
+===================
+Functions give us abstractions - allow us to capture computation and treat as if primitive
+def <function name (<formal parameters>):
+  <function body
+
+Environments
+===============
+Environments are formalism for tracking bindings of variables and values
+Assignments pair name and value in environment
+Asking for value of name just looks up in current environment
+Definitions pair function name with details of function
+
+Modules
+=========
+Modularity suggests grouping functions together that share common theme
