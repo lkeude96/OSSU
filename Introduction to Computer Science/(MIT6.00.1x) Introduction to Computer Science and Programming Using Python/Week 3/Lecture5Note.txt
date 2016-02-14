@@ -1,0 +1,62 @@
+Iteratice Algorithms
+=====================
+Looping constructs lead naturally to iterative algorithms
+
+Recursive Algorithms
+=====================
+Reduce a problem to a simpler or smaller version of the same problem 
+Keep reducong until reach a simple case that can be solved directly
+Each recursive call to a function creates its own environment, with local scoping of variables
+
+Inductive Reasoning
+====================
+Mathematical induction
+
+Factorial
+==========
+n! = n * (n - 1) * ... * 1
+given n
+Iterative version
+  res = 1
+  while n > 1:
+    res = res * n
+    n -= 1
+  return res
+Recursive version
+  if n == 1:
+    return n
+  return n * function(n - 1)
+
+Towers of Hanoi
+================
+given n, from, to , spare
+if n == 1:
+  printMove from to 
+else:
+  function(n-1, from, spare, to)
+  function(1, from, to, spare)
+  function(n-1, spare, to, from)
+
+Fibonacci
+===========
+given x
+if x == 0 or x == 1:
+  return 1
+return function(x-1) + function(x-2)
+
+Recursion on Strings
+=====================
+Palindrome
+  given s
+  s to lowercase
+  remove space and punctuation
+  temps = s
+  if len(temps) <= 1:
+    return True
+  return temps[0] == temps[-1] and function(temps[1:-1]) 
+
+Global Variables
+=================
+Outer most scope of the program
+It might be dangerous
+
