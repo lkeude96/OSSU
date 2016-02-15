@@ -1,0 +1,34 @@
+Tuples
+========
+Ordered sequence of elements
+Operations on tuples
+  Concatenation
+  Indexing
+  Slicing
+  Singleton
+
+Lists
+======
+Ordered sequence of values, each identified by an index
+Use [] instead of ()
+List are mutable
+Operations on list
+  iteration
+  append
+  flatten
+  remove
+
+Functions as Objects
+=====================
+Functions are first class objects
+  They have types
+  They can be elements of data structures like lists
+  They can appear in expressions
+
+Dictionaries
+=============
+Dict is generalization of lists, but now indices dont have to be integers - can be values of any immutable type
+Operations on dict
+  insertion
+  iteration
+  
