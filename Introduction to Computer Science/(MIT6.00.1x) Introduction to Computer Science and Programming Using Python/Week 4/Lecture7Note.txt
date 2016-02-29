@@ -1,0 +1,106 @@
+Testing and Debugging
+======================
+When should you test and debug?
+  Design your code for ease of testing and debugging
+    Break program into components that can be tested and debugged independently
+    Document constraints on modules
+      Expectations on inputs, on outputs
+When are you ready to test?
+  Ensure that code will actually run
+    Remove syntax errors
+    Remove static semantic errors
+    Both of these are typically handled by Python interpreter
+  Have a set of expected results (example: input-output pairings) ready
+
+Test Suites
+=============
+Want to find a collection of inputs that has high likelihood of revealing bugs, yet is efficient
+  Partition space of inputs into subsets that provide equivalent information about correctness
+  Contruct test suite that contains one input from each element of partition
+  Run test suite
+Partitioning
+  What if no natural partition to input space?
+    Random Testing
+    Use heuristics based on exploring paths through the specifications - black box testing
+    Use heuristics based on exploring paths through the code - glass box testing
+
+Black Box Testing
+====================
+Test suite designed without looking at code
+  Can be done by someone other than implementer
+  Will avoid biases of implementer, exposing potential bugs more easily
+  Testing is designed without knowledge of implementation, thus can be reussed even if implementation changed
+
+Glass Box Testing
+==================
+Use code directly to guide design of test cases
+Glass box test suite is path-complete if every potential path through the code is tested at least once
+Rule of thumb for glass box testing
+  Exercise both branches of all if statements
+  Ensure each except clause is executed
+  For each for loop, have tests where:
+    Loop is not entered
+    Body of loop executed exactly once
+    Body of loop executed more tha once
+  For each while loop
+    Same cases as for loops 
+    Cases that catch all ways to exit loop
+  For recursive functions, test with no recursive calls, one recursive call, and more than one recursive call
+
+Test Drivers and Stubs
+========================
+Conducting Tests
+  Start with unit testing (algorithms bug)
+    Check that each module (function) works correctly
+  Move to integration testing (interaction bugs)
+    Check that system as whole works correctly
+  Cycle between these phases
+Test Drivers and Stubs
+  Drivers are code that
+    Set up environment needed to run code 
+    Invoke code on predefined sequence of inputs
+    Save results
+    Report
+  Drivers simulate parts of program that use unit being tested
+  Stubs simulate parts of program used by unit being tested
+    Allow you to test units that depend on software not yet written 
+Regression Testing
+
+Debugging
+==========
+Runtime bugs
+  Overt vs cover:
+    Overt has an obvious manifestation - code crashes or run forever
+    Covert has no obvious manifestation - code returns a value, which may be incorrect but hard to determine
+  Persistent vs intermittent
+    Persistent occurs every time code is run
+    Intermittent only occurs some times, even if run on same input
+Categories of bugs
+  Overt and persistent
+    Obvious to detect
+    Good programmers use defensive programming to try to ensure that if error is made, bug will fall into this category
+  Overt and intermittent
+    More frustrating, can be harder to debug, but if conditions that prompt bug can be reproduced, can be handled
+  Covert
+    Highly dangerous, as users may not realize answers are incorrect until code has been run for long period
+
+Debugging as Search
+====================
+Debugging skills
+  Treat as a search problem: looking for explanation for incorrect behavior
+    Study available data - both correct and incorrect test casses
+    Form an hypothesis consistent with the data
+    Design and run a repeatable experiment with potential to refute the hypothesis
+    Keep record of experiments performed: use narrow range of hypotheses
+Debugging as search
+  Want to narrow down space of possible sources of error
+  Design experiments that expose intermediate stages of computation ( use print statements) and use results to further narrow search
+Some pragmatic hints
+  Look for the usual suspects
+  Ask why the code is doing what it is, not why it is not doing what you want
+  The bug is probably not where you think it is eliminate locations
+  Explain the problem to someone else
+  Don't believe the documentation 
+  Take a break and come back to the bug later
+
+
