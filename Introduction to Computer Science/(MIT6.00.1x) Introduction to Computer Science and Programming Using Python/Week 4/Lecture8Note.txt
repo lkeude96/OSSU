@@ -1,0 +1,39 @@
+Exceptions
+================
+What is an exception?
+  These are exceptions - exceptions to what was expected
+What to do with exceptions?
+  Fail silently: substitute default values, continue
+  Return an 'error' value
+  Stop execution, signal error condition
+Dealing with exceptions
+  try - except: raise
+Types of exceptions
+  SyntaxError: Python can't parse the program
+  NameError: local or global name not found
+  AttributeError: attribute reference fails 
+  TypeError: operand doesn't have correct type
+  ValueError: operand type okay, but value is illegal
+  IOError: IO system reports malfunction
+Other extensiions to try
+  else: execute when try body finish without exception
+  finally: execute after try, else and except clauses(run no matter what happended)
+
+Exceptions as Control Flow
+==============================
+In traditional programming languages, one deals with errors by having functions return special values
+
+Assertions
+============
+This is good defensive programming
+Assertions as defensive programming
+  Typically used to check inputs to procedures, but can be used anywhere
+  Can make it easier to locate a source of a bug
+Where to use assertions?
+  Goal is to spot bugs early, and make clear where they happened
+  Not to be used in place of testing, but as a supplement to testing
+  Should probably rely on raising exceptions if users supplies bad data input, and use assertions for:
+    Checking types of arguments of values
+    Checking that invariants on data structures are met
+    Checking constraints on return values
+    Checking for violations of constraints on procedure  
