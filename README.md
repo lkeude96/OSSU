@@ -15,7 +15,7 @@
 
 Course|Folder|Week|Completion
 :--|:--|:--|:--:
-[Introduction to Computer Science (CS50x)](https://www.edx.org/course/introduction-computer-science-harvardx-cs50x#!)| [here](https://github.com/lkeude96/OSSU/tree/master/Introduction%20to%20Computer%20Science/(CS50x)%20Introduction%20to%20Computer%20Science)| 3 / 12 Weeks|![](http://progressed.io/bar/25?raw=true)
-[Introduction to Computer Science and Programming Using Python (MITx6.00.1)](https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-6#!)| [here](https://github.com/lkeude96/OSSU/tree/master/Introduction%20to%20Computer%20Science/(MIT6.00.1x)%20Introduction%20to%20Computer%20Science%20and%20Programming%20Using%20Python)| 3 / 7 Weeks |![](http://progressed.io/bar/43?raw=true)
-
+[(CS50x) Introduction to Computer Science](https://www.edx.org/course/introduction-computer-science-harvardx-cs50x#!)| [here](https://github.com/lkeude96/OSSU/tree/master/Introduction%20to%20Computer%20Science/(CS50x)%20Introduction%20to%20Computer%20Science)| 3 / 12 Weeks|![](http://progressed.io/bar/25?raw=true)
+[(MITx6.00.1) Introduction to Computer Science and Programming Using Python](https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-6#!)| [here](https://github.com/lkeude96/OSSU/tree/master/Introduction%20to%20Computer%20Science/(MIT6.00.1x)%20Introduction%20to%20Computer%20Science%20and%20Programming%20Using%20Python)| 3 / 9 Weeks |![](http://progressed.io/bar/33?raw=true)
+[(MITx6.00.2) Introduction to Computational Thinking and Data Science](https://www.edx.org/course/introduction-computational-thinking-data-mitx-6-00-2x-3#!)| [here]()| 0 / 9 Weeks |![](http://progressed.io/bar/0?raw=true)
 
