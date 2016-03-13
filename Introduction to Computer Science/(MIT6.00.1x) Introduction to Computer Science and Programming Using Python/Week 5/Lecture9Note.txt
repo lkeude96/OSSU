@@ -1,0 +1,59 @@
+Measuring Complexity
+======================
+Goals in designing programs
+  It returns the correct answer on all legal inputs
+  It performs the computation efficiently
+Computational complexity
+  How much time will it take a program to run?
+  How much memory will it need to run?
+  Balance minimizing computational complexity with conceptual complexity(simple and easy to understand)
+Measuring basic steps
+  Use a random access machine (RAM) as model of computation
+    Steps are executed sequentially
+    Step is an operation that takes constant time
+      Assignment
+      Comparison
+      Arithmetic operation
+      Accessing object in memory
+Cases for measuring complexity
+  Best case: minimum running time over all possible inputs of a given size
+  Worst case: maximum running time over all possible inputs of a given size
+  Average case: average running time over all possible inputs of a given size
+
+Asymptotic Notation
+======================
+Need a formal way to talk about relationship between running time and size of inputs
+Rules of thumb for complexity
+  Asymptotic complexity
+    Describe running time in terms of number of basic steps
+    If running time is sum of multiple terms, keep one with the largest growth rate
+    If remaining term is a product, drop any multiplicative constants
+  Use "Big O" notation (aka Omicron)
+    Gives an upper bound on asymptotic growth of a function
+
+Complexity Classes
+===================
+Constant complexity
+O(1)       -> denotes constant running time
+  Complexity independent of inputs
+  Very few interesting algorithms in this class, but cant often have pieces that fit this class
+  Can have loops or recursive calls, but number of iterations or calls independent of size of input
+Logarithmic complexity
+O(log n)   -> denotes logarithmic running time
+  Complexity grows as log of size of one of its inputs (Bisection search)
+Linear complexity
+O(n)       -> denotes linear running time
+  Searching a list in order to see if an element is present
+  Complexity can depend on number of recursive calls
+Log-linear complexity
+O(n log n) -> denotes log-linear running time
+  Many practical algorithms are log-linear 
+  Very commonly used log-linear algorithm is merge sort
+Polynomial complexity
+O(n^c)     -> denotes polynomial running time (c is a constant)
+  Most common polynomial algorithms are quadratic
+  Commonly occurs when we have nested loops or recursive function calls
+Exponential complexity
+O(c^n)     -> denotes exponential running time (c is a constant being raised to a power based on size of input)
+  Recursive functions where more than one recursive call for each size of problem (Towers of Hanoi)
+  Many important problems are inherently exponential
